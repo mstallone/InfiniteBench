@@ -19,7 +19,7 @@ from vllm import LLM, SamplingParams
 from args import parse_args
 
 
-TRUNCATE_LEN = 131072
+TRUNCATE_LEN = 128000
 
 sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
 def truncate_input(input: list, max_length: int, manner="middle"):
